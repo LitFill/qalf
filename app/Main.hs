@@ -49,3 +49,8 @@ main =
         post "/echo" <| do
           msg <- formParam "msg"
           text msg
+
+        get "/todos"
+          <| text
+          <| TL.fromStrict
+          <| pprintTodos exampleTodos
