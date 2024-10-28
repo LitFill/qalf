@@ -1,4 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
+
 module Greet where
 
 import Data.String qualified as S
